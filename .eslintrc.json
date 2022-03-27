@@ -1,0 +1,54 @@
+{
+    "env": {
+        "node": true,
+        "es2021": true
+    },
+    "extends": [
+        "airbnb-base",
+        "plugin:prettier/recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:prettier/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "prettier",
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "prettier/prettier": [
+            "error",
+            {
+                "printWidth": 120,
+                "bracketSpacing": true,
+                "singleQuote": true,
+                "semi": false,
+                "trailingComma": "es5"
+            }
+        ],
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "never"
+        ],
+        "eqeqeq": "error",
+        "no-var": "error",
+        "prefer-arrow-callback": "warn",
+        "prefer-const": "error",
+        "no-console": "error",
+        "no-duplicate-case": "warn",
+        "@typescript-eslint/no-unused-vars": "warn",
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/ban-ts-comment": "off"
+    }
+}
